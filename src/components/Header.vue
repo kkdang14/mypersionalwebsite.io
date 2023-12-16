@@ -7,9 +7,9 @@
             <div class="nav__lists">
                 <router-link class="nav__lists-item" to="/">Home</router-link>
                 <router-link class="nav__lists-item" to="/#about">About me</router-link>
-                <router-link class="nav__lists-item" to="#">My Service</router-link>
+                <router-link class="nav__lists-item" to="/#services">My Service</router-link>
                 <router-link class="nav__lists-item" to="#">Contact</router-link>
-                <router-link class="nav__lists-item" to="#">Blog</router-link>
+                <router-link class="nav__lists-item" to="#">My Blog</router-link>
             </div>
             <div class="nav__links">
                 <a href="https://github.com/kkdang14"><i class="fa-brands fa-github"></i></a>

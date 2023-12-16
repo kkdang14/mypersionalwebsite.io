@@ -85,10 +85,71 @@
                 </div>
             </div>
         </div>
+        <div class="services" id="services">
+            <div class="services-container">
+                <div class="title-service">
+                    <h2>What I Do</h2>
+                </div>
+                <div class="box-services">
+                    <div class="box-service__item">
+                        <div class="icon"><i class="fa-solid fa-globe"></i></div>
+                        <h4>Fullstack Web Developer</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                    <div class="box-service__item">
+                        <div class="icon"><i class="fa-solid fa-server"></i></div>
+                        <h4>Backend Developer</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                    <div class="box-service__item">
+                        <div class="icon"><i class="fa-brands fa-css3"></i></div>
+                        <h4>Frontend Developer</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                    <div class="box-service__item">
+                        <div class="icon"><i class="fa-solid fa-square-share-nodes"></i></div>
+                        <h4>Git Version Control</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                    <div class="box-service__item">
+                        <div class="icon"><i class="fa-solid fa-globe"></i></div>
+                        <h4>Web Development</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                    <div class="box-service__item">
+                        <div class="icon"><i class="fa-solid fa-globe"></i></div>
+                        <h4>Web Development</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
-
-
 
 <script>
 import Certificate from '../components/Certificate.vue';
@@ -272,13 +333,13 @@ export default {
 .about{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    width: 100%;
 }
 
 .about-container{
     display: flex;
     width: 90%;
-    height: 90vh;
+    height: 100vh;
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid #d88a58;
@@ -293,11 +354,13 @@ export default {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    width: 100%;
 }
 
 .title{
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .title > .title-items{
@@ -325,5 +388,41 @@ export default {
     border: 1px solid #d88a58;
     border-radius: 15px;
     padding: 10px;
+    width: 100%;
+}
+
+.services{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.services-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #d88a58;
+    width: 90%;
+    height: 90vh;
+}
+
+.box-services{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.box-service__item{
+    width: 30%;
+    height: 250px;
+    border-radius: 15px;
+    margin: 20px;
+    border: 1px solid #d88a58;
+    padding: 10px;
+}
+
+.icon{
+    font-size: 25px;
 }
 </style>
