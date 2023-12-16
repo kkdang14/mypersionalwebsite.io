@@ -26,18 +26,20 @@
 <style scoped>
     .header{
         width: 100%;
-        height: 100px;
+        height: 120px;
         background-color: #1c1b1b;
         display: flex;
         justify-content: center;
     }
     .nav{
         width: 90%;
-        height: 100%;
-        padding: 40px 0 40px 0;
+        height: 90%;
+        padding: 10px;
+        /* margin: 20px 0 20px 0; */
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 1000;
     }
 
     .nav__logo{
