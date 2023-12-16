@@ -1,12 +1,12 @@
 <template>
-    <div class="certificate">
-        <div class="eng">
+    <div class="favorite">
+        <div class="sport">
             <i class="fa-solid fa-code"></i>
-            <span>TOEIC 900+</span>
+            <span>Sport: Babminton, Football,...</span>
         </div>
-        <div class="udemy">
+        <div class="Other">
             <i class="fa-solid fa-code"></i>
-            <span>Udemy Certificate</span>
+            <span>Listen to music, read books, play games.</span>
         </div>
     </div>
 </template>
@@ -16,19 +16,19 @@
 </script>
 
 <style scoped>
-    .certificate{
+    .favorite{
         color: #d88a58;
     }
 
-    .certificate > div{
+    .favorite > div{
         display: flex;
     }
 
-    .certificate > div i {
+    .favorite > div i {
         font-size: 18px;
     }
 
-    .certificate > div span{
+    .favorite > div span{
         font-size: 17px;
         margin-left: 5px;
         font-weight: 500;

@@ -26,14 +26,14 @@
                 </div>
             </div>
             <div class="img">
-                <img src="../../public/image/bear2.jpg" alt="">
+                <img src="../../public/image/bear3.jpg" alt="">
             </div>
         </div>
 
         <div class="about" id="about">
             <div class="about-container">
                 <div class="img">
-                    <img src="../../public/image/bear2.jpg" alt="">
+                    <img src="../../public/image/bear3.jpg" alt="">
                 </div>
                 <div class="overview">
                     <div class="overview__content">
@@ -47,18 +47,18 @@
                     <div class="professional">
                         <div class="title">
                             <div 
-                                class="title-items study" 
+                                class="title-items skill" 
                                 @click="change(0)"
                                 :class="{'selected': selectedItem === 0}"
                             >
-                                <span>Study</span>
+                                <span>Personal Skills</span>
                             </div>
                             <div 
-                                class="title-items skill" 
+                                class="title-items study" 
                                 @click="change(1)"
                                 :class="{'selected': selectedItem === 1}"
                             >
-                                <span>Skill</span>
+                                <span>Study</span>
                             </div>
                             <div 
                                 class="title-items certificate" 
@@ -67,11 +67,19 @@
                             >
                                 <span>Certificate</span>
                             </div>
+                            <div 
+                                class="title-items favorite" 
+                                @click="change(3)"
+                                :class="{'selected': selectedItem === 3}"
+                            >
+                                <span>Favorite</span>
+                            </div>
                         </div>
                         <div class="profess__content">
-                            <knowledge v-if="profess_value === 0"></knowledge>
-                            <skill v-if="profess_value === 1"></skill>
+                            <skill v-if="profess_value === 0"></skill>  
+                            <knowledge v-if="profess_value === 1"></knowledge>
                             <certificate v-if="profess_value === 2"></certificate>
+                            <favorite v-if="profess_value === 3"></favorite>
                         </div>
                     </div>
                 </div>
@@ -84,13 +92,14 @@
 
 <script>
 import Certificate from '../components/Certificate.vue';
+import Favorite from '../components/Favorite.vue';
 import Knowledge from '../components/Knowledge.vue';
 import Skill from '../components/Skill.vue';
 export default {
-    components: { Skill, Certificate, Knowledge },
+    components: { Skill, Certificate, Knowledge, Favorite },
     data() {
         return {
-            texts: ["Kim Khanh Dang", "a Web Developer"],
+            texts: ["Daniel", "a Web Developer"],
             currentIndex: 0,
             currentText: "",
             typingSpeed: 100, // Adjust the typing speed by changing this value
@@ -197,23 +206,15 @@ export default {
 }
 
 .info{
-    margin-top: 50px;
+    margin-top: 40px;
     width: 100%;
-    height:auto;
+    height: 80px;
     font-size: 18px;
     display: flex;
 }
 
-/* .btn{
-    margin-top: 10px;
-    font-size: 20px;
-    font-weight: 500;
-    background-color: #d88a58;
-    color: #1c1b1b;
-    box-shadow: 0 9px #ecb593;
-} */
-
 .btn {
+    margin-top: 30px;
     padding: 15px 30px;
     text-align: center;
     text-transform: uppercase;
@@ -271,15 +272,16 @@ export default {
 .about{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .about-container{
     display: flex;
     width: 90%;
-    height: 80vh;
+    height: 90vh;
     justify-content: space-around;
-
+    align-items: center;
+    border-bottom: 1px solid #d88a58;
 }
 
 .overview{
@@ -290,6 +292,7 @@ export default {
 .professional{
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
 }
 
 .title{
@@ -298,13 +301,14 @@ export default {
 }
 
 .title > .title-items{
-    width: 175px;
+    width: 150px;
     height: 50px;
     border: 1px solid #d88a58;
     font-size: 18px;
     border-radius: 15px;
     text-align: center;
-    line-height: 50px;
+    line-height: 45px;
+    font-weight: 500;
 }
 
 .title > .title-items:hover{
@@ -315,16 +319,11 @@ export default {
     background-color: #d88a58;
     color: #000;
 }
-
-
-
 .profess__content{
-    margin-top: 10px;
-    height: 145px;
+    margin-top: 20px;
+    height: 140px;
     border: 1px solid #d88a58;
     border-radius: 15px;
     padding: 10px;
 }
-
-
 </style>

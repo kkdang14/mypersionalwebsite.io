@@ -6,13 +6,14 @@
             </div>
             <div class="nav__lists">
                 <router-link class="nav__lists-item" to="/">Home</router-link>
-                <router-link class="nav__lists-item" to="#">About me</router-link>
-                <router-link class="nav__lists-item" to="#">Blog</router-link>
+                <router-link class="nav__lists-item" to="/#about">About me</router-link>
+                <router-link class="nav__lists-item" to="#">My Service</router-link>
                 <router-link class="nav__lists-item" to="#">Contact</router-link>
+                <router-link class="nav__lists-item" to="#">Blog</router-link>
             </div>
             <div class="nav__links">
-                <a href="https://github.com/dangdev14"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=61554474264968"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://github.com/kkdang14"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/justdaln/"><i class="fa-brands fa-facebook"></i></a>
                 <a href=""><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
@@ -49,15 +50,22 @@
     }
 
     .nav__lists{
-        width: 40%;
+        width: 55%;
         display: flex;
-        justify-content: space-evenly;
-        font-size: 24px;
+        justify-content: space-between;
+        font-size: 22px;
     }
 
     .nav__lists-item {
         color: #d88a58;
+        width: 150px;
+        text-align: center;
         text-decoration: none;
+        font-weight: 600;
+    }
+
+    .nav__lists-item:hover {
+        color: #eba884;
     }
 
     .nav__links {
@@ -69,5 +77,9 @@
 
     .nav__links a{
         color: #d88a58;
+    }
+
+    .nav__links a:hover{
+        color: #eba884;
     }
 </style>
