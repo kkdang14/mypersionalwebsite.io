@@ -2,13 +2,13 @@
     <div class="header">
         <div class="nav">
             <div class="nav__logo">
-                <h2>DANDEV</h2>
+                <router-link to="/"><h2>DANDEV</h2></router-link>
             </div>
             <div class="nav__lists">
                 <router-link class="nav__lists-item" to="/">Home</router-link>
                 <router-link class="nav__lists-item" to="/#about">About me</router-link>
                 <router-link class="nav__lists-item" to="/#services">My Service</router-link>
-                <router-link class="nav__lists-item" to="#">Contact</router-link>
+                <router-link class="nav__lists-item" to="/#contact">Contact</router-link>
                 <router-link class="nav__lists-item" to="#">My Blog</router-link>
             </div>
             <div class="nav__links">
@@ -28,7 +28,7 @@
     .header{
         width: 100%;
         height: 120px;
-        background-color: #1c1b1b;
+        background-color: #fff;
         display: flex;
         justify-content: center;
     }
@@ -46,7 +46,11 @@
     .nav__logo{
         width: 150px;
         height: auto;
-        color: #d88a58;
+    }
+
+    .nav__logo a{
+        text-decoration: none;
+        color: #f09819;
     }
 
     .nav__lists{
@@ -57,7 +61,7 @@
     }
 
     .nav__lists-item {
-        color: #d88a58;
+        color: #f09819;
         width: 150px;
         text-align: center;
         text-decoration: none;
@@ -65,7 +69,7 @@
     }
 
     .nav__lists-item:hover {
-        color: #eba884;
+        color: #f09819;
     }
 
     .nav__links {
@@ -76,10 +80,10 @@
     }
 
     .nav__links a{
-        color: #d88a58;
+        color: #f09819;
     }
 
     .nav__links a:hover{
-        color: #eba884;
+        color: #f09819;
     }
 </style>

@@ -1,4 +1,4 @@
-<template>
+    <template>
     <div class="skill">
         <div class="lang">
             <i class="fa-solid fa-code"></i>
@@ -25,7 +25,7 @@
 
 <style scoped>
     .skill{
-        color: #d88a58;
+        color: #f09819;
     }
 
     .skill > div{

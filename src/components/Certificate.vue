@@ -17,7 +17,7 @@
 
 <style scoped>
     .certificate{
-        color: #d88a58;
+        color: #f09819;
     }
 
     .certificate > div{

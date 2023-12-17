@@ -6,7 +6,7 @@
         </div>
         <div class="Other">
             <i class="fa-solid fa-code"></i>
-            <span>Listen to music, read books, play games.</span>
+            <span>Listen to music, read books, play games, travel.</span>
         </div>
     </div>
 </template>
@@ -17,7 +17,7 @@
 
 <style scoped>
     .favorite{
-        color: #d88a58;
+        color: #f09819;
     }
 
     .favorite > div{
