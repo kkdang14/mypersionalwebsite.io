@@ -12,9 +12,9 @@
                 <router-link class="nav__lists-item" to="#">My Blog</router-link>
             </div>
             <div class="nav__links">
-                <a href="https://github.com/kkdang14"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.facebook.com/justdaln/"><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/kkdang14" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/justdaln/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin" target="_blank"></i></a>
             </div>
         </div>
     </div>
@@ -27,7 +27,7 @@
 <style scoped>
     .header{
         width: 100%;
-        height: 120px;
+        height: 110px;
         background-color: #fff;
         display: flex;
         justify-content: center;

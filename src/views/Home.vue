@@ -88,16 +88,15 @@
         <div class="services" id="services">
             <div class="services-container">
                 <div class="title-service">
-                    <h2>What I Do</h2>
+                    <h2>What I Do?</h2>
                 </div>
                 <div class="box-services">
                     <div class="box-service__item">
                         <div class="icon"><i class="fa-solid fa-globe"></i></div>
                         <h4>Fullstack Web Developer</h4>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Turn your vision into a standout online presence with my expert web development at DanDev. 
+                            Unique design, flexible development, SEO optimization, strong security, and easy integration all tailored to your needs. 
                         </p>
                         <div class="readmore">
                             <button class="rm_btn">READ MORE</button>
@@ -105,11 +104,11 @@
                     </div>
                     <div class="box-service__item">
                         <div class="icon"><i class="fa-solid fa-server"></i></div>
-                        <h4>Backend Developer</h4>
+                        <h4>Backend Web</h4>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Empower your backend with my top-notch development expertise at DanDev. 
+                            Our services include robust architecture, efficient database management, seamless API integration, and security-first approach. 
+                            Let us optimize your backend for performance and reliability. 
                         </p>
                         <div class="readmore">
                             <button class="rm_btn">READ MORE</button>
@@ -117,11 +116,11 @@
                     </div>
                     <div class="box-service__item">
                         <div class="icon"><i class="fa-brands fa-css3"></i></div>
-                        <h4>Frontend Developer</h4>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. 
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        <h4>Frontend Web</h4>
+                        <p> 
+                            We specialize in creating visually stunning and user-friendly interfaces. 
+                            Our services encompass responsive design, intuitive navigation, and seamless integration. 
+                            Transform your user interface into a captivating and efficient platform.
                         </p>
                         <div class="readmore">
                             <button class="rm_btn">READ MORE</button>
@@ -140,8 +139,8 @@
                         </div>
                     </div>
                     <div class="box-service__item">
-                        <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
-                        <h4>Testing</h4>
+                        <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h4>Tutorial</h4>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
@@ -290,7 +289,7 @@ export default {
 
 .home__present{
     width: 90%;
-    height: 75vh;
+    height: 80vh;
     /* margin-top: -20px; */
     background-color:#fff;
     display: flex;
@@ -374,7 +373,7 @@ export default {
     width: 300px;
     height: 50px;
     padding: 0 10px 0 10px;
-    border-left: 2px solid #f09819;
+    border-left: 3px solid #f09819;
 }
 
 .img{
@@ -400,14 +399,17 @@ export default {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin: 40px 0;
 }
 
 .about-container{
     display: flex;
     width: 90%;
-    height: 100vh;
+    height: auto;
+    padding: 20vh 0;
     justify-content: space-around;
     align-items: center;
+    border-top: 1px solid #d88a58;
     border-bottom: 1px solid #f09819;
 }
 
@@ -438,6 +440,8 @@ export default {
     text-align: center;
     line-height: 45px;
     font-weight: 500;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
 }
 
 .title > .title-items:hover{
@@ -455,13 +459,14 @@ export default {
     border-radius: 15px;
     padding: 10px;
     width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .services{
     display: flex;
     justify-content: center;
     width: 100%;
-    /* margin-top: 60px; */
+    height: auto;
 }
 
 .services-container{
@@ -471,14 +476,14 @@ export default {
     color: #f09819;
     width: 90%;
     height: 100vh;
+    padding: 50px 0;
     border-bottom: 1px solid #d88a58;
-    padding: 50px;
 }
 
 .box-services{
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
+    width: 100%;    
     flex-wrap: wrap;
 }
 .box-service__item{
@@ -490,12 +495,16 @@ export default {
     padding: 10px;
     position: relative;
     overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .box-service__item:hover{
     cursor: default;
 }
 
+.box-service__item p{
+    text-align: justify;
+}
 .icon{
     font-size: 25px;
 }
@@ -545,11 +554,11 @@ export default {
 
 .contact-container{
     display: flex;
+    margin: 20px 0;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     align-items: center;
     padding: 40px;
-    border-bottom: 1px solid #f09819;
 }
 
 .contact-title{
@@ -561,10 +570,12 @@ export default {
     display: flex;
     border: 1px solid #f09819;
     border-radius: 15px;
+    height: auto;
     padding: 10px;
-    width: 80%;
+    width: 90%;
     justify-content: space-around;
     align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .info-contact__item{
@@ -586,6 +597,7 @@ export default {
     align-items: center;
     border-radius: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid #f09819;
 }
 
 .form-container .form-contact{
