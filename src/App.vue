@@ -1,8 +1,8 @@
 <template>
   <div class="app">
-    <Header></Header>
+    <Header v-if="showHeader"></Header>
     <router-view></router-view>
-    <Footer></Footer>
+    <Footer v-if="showFooter"></Footer>
   </div>
 </template>
 
@@ -13,7 +13,23 @@ export default {
   name: "App",
   components:{
     Header, Footer
-  }
+  },
+
+  computed: {
+    showHeader() {
+      const excludedRoutes = ['blog']
+      return !excludedRoutes.includes(this.$route.name);
+    },
+
+    showFooter() {
+      const excludedRoutes = ['blog'];
+      return !excludedRoutes.includes(this.$route.name);
+    },
+
+    isHomePage() {
+      return this.$route.name === 'home'; 
+    },
+  },
 }
 </script>
 
